@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity$PlaceholderFragment">
+
+    <TextView
+        android:id="@+id/timeText"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="5.54"
+        android:textSize="150sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#ffff7409"/>
+
+    <Button
+        android:id="@+id/backgroundBlue"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:background="@drawable/deactivated_circle"
+        android:layout_centerInParent="true"
+        android:textSize="200sp"
+        android:textColor="#beffffff"
+        android:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/infoView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="0 players connected.\nYou are player 0."
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:textSize="20sp"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Debug Mode"
+        android:id="@+id/debug"
+        android:layout_above="@+id/backgroundBlue"
+        android:layout_alignLeft="@+id/backgroundBlue"
+        android:layout_alignStart="@+id/backgroundBlue"
+        android:visibility="gone"/>
+
+     <LinearLayout
+         android:id="@+id/game_over_vayout"
+         android:layout_width="fill_parent"
+         android:layout_height="fill_parent"
+         android:visibility="gone"
+         android:background="#ffff1b00"
+         android:orientation="vertical">
+
+         <TextView
+             android:id="@+id/result_view"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:text="Game Over"
+             android:gravity="center"
+             android:textSize="70sp"
+             android:textColor="@android:color/white"
+             android:textStyle="bold"
+             android:layout_marginTop="30dp"/>
+
+         <TextView
+             android:id="@+id/playersView"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:text="\nThere are\n2\nother players remaining\n\n"
+             android:gravity="center"
+             android:textSize="20sp"
+             android:textColor="@android:color/white"/>
+
+         <TextView
+             android:id="@+id/roundsView"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:text="You lasted\n3\nrounds\n\n"
+             android:gravity="center"
+             android:textSize="20sp"
+             android:textColor="@android:color/white"/>
+
+         <TextView
+             android:id="@+id/averageTimeView"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:text="Your average response time was\n3.12\nseconds"
+             android:gravity="center"
+             android:textSize="20sp"
+             android:textColor="@android:color/white"/>
+     </LinearLayout>
+</RelativeLayout>

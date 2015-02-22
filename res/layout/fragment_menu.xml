@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/potatoe"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"/>
+
+    <RelativeLayout
+        android:id="@+id/circles_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="500dp"
+        android:layout_marginTop="100dp"/>
+
+    <at.markushi.ui.CircleButton
+        android:id="@+id/menu_join"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:cb_color="#ff6519"
+        app:cb_pressedRingWidth="10dp"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="Join"
+        android:textSize="75sp"
+        android:textColor="#beffffff"/>
+
+    <TextView
+        android:id="@+id/infoView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="0 players connected.\nYou are player 0."
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:textSize="20sp"
+        android:layout_marginBottom="20dp"/>
+
+</RelativeLayout>
